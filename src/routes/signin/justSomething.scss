@@ -1,0 +1,37 @@
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1fa2ff;
+  height: 80vh;
+  background-image: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  position: relative;
+  overflow: hidden;
+
+  .btn {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+    background-image: linear-gradient(to right, #fdc830, #f37335);
+    font-size: 2rem;
+    width: 25rem;
+    height: 10rem;
+    border-radius: 2rem;
+    outline: none;
+    transition: background-color 2s ease;
+  }
+
+  .btn:before {
+    content: url("src/img/google.svg");
+    width: 1.2rem;
+    float: left;
+    margin-right: 0.5rem;
+    margin-top: -0.2rem;
+    outline: none;
+  }
+
+  .btn:hover {
+    background-image: linear-gradient(to right, #c79d27, #cb5f2f);
+  }
+}
+

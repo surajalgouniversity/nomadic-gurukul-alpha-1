@@ -1,0 +1,68 @@
+%figure-placeholder {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: visible;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  top: 5rem;
+  left: 5rem;
+  background-image: linear-gradient(to right bottom,
+    //$header-primary-start,
+          $header-primary-start, $header-primary-end);
+
+  .nav-link {
+    margin: 0 auto;
+    text-decoration: none;
+    color: $color-white;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+
+    &:hover:not(:first-child){
+      background-color: rgba($color-white,0.2);
+      transform: scale(1.1);
+      padding: .2rem;
+    }
+
+    .ng {
+      background-image: url("src/img/ngLogo.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 12rem;
+      height: 12rem;
+      overflow: visible;
+    }
+
+    .small-h {
+      background-image: url("src/img/home.svg");
+      @extend %figure-placeholder;
+    }
+    .small-su {
+      background-image: url("src/img/login.svg");
+      @extend %figure-placeholder;
+    }.small-q {
+       background-image: url("src/img/quiz.svg");
+       @extend %figure-placeholder;
+     }
+    .small-p {
+        background-image: url("src/img/profile.svg");
+        @extend %figure-placeholder;
+      }
+    .small-c {
+      background-image: url("src/img/person.svg");
+      @extend %figure-placeholder;
+    }
+  }
+}
+
